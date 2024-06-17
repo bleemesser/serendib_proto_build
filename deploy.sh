@@ -32,6 +32,7 @@
 # Copy nginx.conf to /etc/nginx/nginx.conf and reload Nginx
 sudo useradd nginx
 sudo cp nginx.conf /etc/nginx/nginx.conf
+sudo systemctl restart nginx
 sudo nginx -s reload
 
 # Create a systemd service file
