@@ -20,14 +20,14 @@
 
 # Clone the public git repository
 # check if folder exists:
-if [ -d "$HOME/serendib_proto_build" ]; then
-  cd $HOME/serendib_proto_build
-  git pull
-else
-  cd $HOME
-  git clone https://github.com/bleemesser/serendib_proto_build.git
-fi
-cd $HOME/serendib_proto_build
+# if [ -d "$HOME/serendib_proto_build" ]; then
+#   cd $HOME/serendib_proto_build
+#   git pull
+# else
+#   cd $HOME
+#   git clone https://github.com/bleemesser/serendib_proto_build.git
+# fi
+# cd $HOME/serendib_proto_build
 
 # Copy nginx.conf to /etc/nginx/nginx.conf and reload Nginx
 sudo useradd nginx
