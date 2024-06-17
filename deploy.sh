@@ -59,9 +59,9 @@ sudo systemctl enable pocketbase.service
 sudo systemctl restart pocketbase.service
 
 # Open ports 80 and 443
-sudo iptables -I INPUT -p tcp -m tcp --dport 80 -j ACCEPT
-sudo iptables -I INPUT -p tcp -m tcp --dport 443 -j ACCEPT
-sudo systemctl restart iptables
+# sudo iptables -I INPUT -p tcp -m tcp --dport 80 -j ACCEPT
+# sudo iptables -I INPUT -p tcp -m tcp --dport 443 -j ACCEPT
+# sudo systemctl restart iptables
 
 # create script that auto-checks the repo for updates
 echo "#!/bin/bash
